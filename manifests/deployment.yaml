@@ -40,8 +40,8 @@ spec:
         - containerPort: 8080
           name: http
         securityContext:
-          privileged: false
-          runAsNonRoot: true
+          privileged: true
+          runAsNonRoot: false
           allowPrivilegeEscalation: false
           seccompProfile:
             type: RuntimeDefault
