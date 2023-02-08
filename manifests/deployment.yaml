@@ -5,7 +5,7 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  app: gatekeeper-policy-manager
+  name: gatekeeper-policy-manager
 spec:
   replicas: 1
   selector:
