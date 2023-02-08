@@ -21,11 +21,11 @@ resources:
 #   - manifests/enable-oidc.yaml
 
 # Example secretGenerator to create a secret with the kubeconfig:
-# secretGenerator:
-#   - name: kubeconfig
-#     namespace: gatekeeper-system
-#     files:
-#       - kubeconfig # or the path to your file.
+secretGenerator:
+   - name: kubeconfig
+     namespace: gatekeeper-system
+     files:
+       - manifests/kubeconfig # or the path to your file.
 
 images:
   - name: quay.io/sighup/gatekeeper-policy-manager
