@@ -16,6 +16,9 @@ spec:
       labels:
         app: gatekeeper-policy-manager
     spec:
+      selector:
+        matchLabels:
+          app: gatekeeper-policy-manager
       serviceAccountName: gatekeeper-policy-manager
       containers:
       - name: gatekeeper-policy-manager
