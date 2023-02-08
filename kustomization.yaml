@@ -2,7 +2,7 @@
 # Use of this source code is governed by a BSD-style
 # license that can be found in the LICENSE file.
 
-namespace: gatekeeper-system
+namespace: cattle-gatekeeper-system
 
 resources:
   - manifests/rbac.yaml
@@ -23,7 +23,7 @@ resources:
 # Example secretGenerator to create a secret with the kubeconfig:
 secretGenerator:
    - name: kubeconfig
-     namespace: gatekeeper-system
+     namespace: cattle-gatekeeper-system
      files:
        - manifests/kubeconfig # or the path to your file.
 
