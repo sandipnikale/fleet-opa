@@ -10,7 +10,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      app: gatekeeper-policy-manager
+      name: gatekeeper-policy-manager
   template:
     metadata:
       labels:
