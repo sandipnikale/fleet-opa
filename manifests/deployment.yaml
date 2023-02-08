@@ -5,12 +5,12 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: gatekeeper-policy-manager
+  app: gatekeeper-policy-manager
 spec:
   replicas: 1
   selector:
     matchLabels:
-      app.kubernetes.io/name: gatekeeper-policy-manager
+       app: gatekeeper-policy-manager
   template:
     metadata:
       labels:
