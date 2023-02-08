@@ -10,7 +10,7 @@ spec:
   replicas: 1
   selector:
     matchLabels:
-      name: gatekeeper-policy-manager
+      app.kubernetes.io/name: gatekeeper-policy-manager
   template:
     metadata:
       labels:
